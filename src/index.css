@@ -110,4 +110,25 @@
   @apply w-1/2 flex justify-around items-center text-[#2D4072] my-4;
 }
 
+.features {
+  @apply flex justify-start items-start mt-4 mb-9;
+}
+.left-feature {
+  @apply w-1/3 ml-20;
+}
+.right-feature {
+  @apply w-2/3;
+}
+.left-feature h2 {
+  @apply font-[450] text-5xl;
+}
+.left-feature p {
+  @apply text-base text-[#B2B3B6] my-10;
+}
+.right-feature {
+  @apply flex justify-around items-center flex-wrap;
+}
+.right-feature .ft {
+  @apply w-1/4 flex flex-col items-center mx-2 mb-8;
+}
 @tailwind utilities;

@@ -30,7 +30,7 @@ const Doctors = () => {
       <div className='doctor-cards'>
         {doctors.map((doctor, i) => {
           return (
-            <div key={Math.floor(Math.random() * 10)} className='dctr-card'>
+            <div key={Math.floor(Math.random() * 1000)} className='dctr-card'>
               <img src={require(`../assets/img/doc${i + 1}.png`)} alt='' />
               <h2>{doctor.docName}</h2>
               <h3>{doctor.docProf}</h3>

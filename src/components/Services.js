@@ -3,7 +3,7 @@ import Service from './Service';
 const Services = () => {
   const services = ['Online appointment', 'Emergency Case', 'Our Doctors'];
   return (
-    <div className='service-cards' key={Math.floor(Math.random() * 10)}>
+    <div className='service-cards' key={Math.floor(Math.random() * 1000)}>
       {services.map((service) => (
         <Service service={service} />
       ))}

@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Services from './components/Services';
 import AboutUs from './components/AboutUs';
 import Doctors from './components/Doctors';
+import Features from './components/Features';
 function App() {
   return (
     <div className='App'>
@@ -13,6 +14,7 @@ function App() {
       <Services />
       <AboutUs />
       <Doctors />
+      <Features />
     </div>
   );
 }
