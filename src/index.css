@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@tailwind base;
+@tailwind components;
+* {
+  @apply m-0 p-0 box-border font-Roboto bg-[#F9FDFE];
+}
+.App {
+  @apply w-4/5 m-auto;
+}
+.nav-bar {
+  @apply flex w-full justify-around items-center mt-4 h-[10vh];
+}
+.nav-items {
+  @apply flex w-1/2 justify-around items-center;
+}
+.btn {
+  @apply flex items-center py-3 px-8 border rounded-3xl bg-gradient-to-r from-[#3B559A] to-[#78ABD9] text-white;
+}
+.btn svg {
+  @apply bg-transparent ml-2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  @apply flex my-8 justify-around font-Montserrat h-[90vh];
 }
+.right-header {
+  @apply flex flex-col w-[40%] justify-center;
+}
+.right-header p {
+  @apply first:text-[#2A3962] first:mb-4 mb-6 first:uppercase text-sm text-[#B2B3B6];
+}
+.right-header h1 {
+  @apply text-7xl mb-6 tracking-normal;
+}
+.btns {
+  @apply flex;
+}
+.btns .btn2 {
+  @apply ml-4 py-3 px-8 border-transparent rounded-3xl bg-white;
+}
+
+.service-cards {
+  @apply flex justify-around bg-gradient-to-b from-white to-[#F4F9FC] mb-8;
+}
+.service-cards .card {
+  @apply w-3/12 bg-white border-transparent rounded-lg px-4 flex flex-col items-center text-center h-[90%] shadow-lg shadow-blue-300/40;
+}
+.service-cards .card svg {
+  @apply text-[#607EAB] text-3xl  my-6 w-[15%] h-[15%];
+}
+.card h2 {
+  @apply text-base font-semibold mb-3;
+}
+.card p {
+  @apply text-[#B2B3B6] mb-3;
+}
+.card h3 {
+  @apply font-normal cursor-pointer text-base mb-3;
+}
+.phone {
+  @apply flex items-center text-[#2D4072];
+}
+.phone svg {
+  @apply m-0 text-sm mr-2;
+}
+
+@tailwind utilities;
