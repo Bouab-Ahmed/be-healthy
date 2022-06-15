@@ -5,11 +5,14 @@ import { AiFillPhone } from 'react-icons/ai';
 import { GiDoctorFace } from 'react-icons/gi';
 
 const Service = ({ service }) => {
+  let srvc1 = require('../assets/img/srvc1.png');
+  let srvc2 = require('../assets/img/srvc2.png');
+  let srvc3 = require('../assets/img/srvc3.png');
   let card;
   service === 'Online appointment'
     ? (card = (
         <div className='card'>
-          <AiOutlineReconciliation />
+          <img src={srvc1} alt='' />
           <h2>{service}</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -22,7 +25,7 @@ const Service = ({ service }) => {
     : service === 'Emergency Case'
     ? (card = (
         <div className='card'>
-          <AiOutlineMedicineBox />
+          <img src={srvc2} alt='' />
           <h2>{service}</h2>
           <p>Lorem Ipsum is simply dummy </p>
           <div className='phone'>
@@ -36,7 +39,7 @@ const Service = ({ service }) => {
     : service === 'Our Doctors'
     ? (card = (
         <div className='card'>
-          <GiDoctorFace />
+          <img src={srvc3} alt='' />
           <h2>{service}</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting

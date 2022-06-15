@@ -40,10 +40,13 @@
 }
 
 .service-cards {
-  @apply flex justify-around bg-gradient-to-b from-white to-[#F4F9FC] mb-8;
+  @apply flex justify-around mb-8;
 }
 .service-cards .card {
   @apply w-3/12 bg-white border-transparent rounded-lg px-4 flex flex-col items-center text-center h-[90%] shadow-lg shadow-blue-300/40;
+}
+.service-cards .card img {
+  @apply my-6;
 }
 .service-cards .card svg {
   @apply text-[#607EAB] text-3xl  my-6 w-[15%] h-[15%];
@@ -62,6 +65,49 @@
 }
 .phone svg {
   @apply m-0 text-sm mr-2;
+}
+
+.about-us {
+  @apply flex;
+}
+.about-us img {
+  @apply p-8 border-transparent rounded-lg;
+}
+.right-about-us {
+  @apply flex flex-col justify-center w-64;
+}
+.right-about-us h2 {
+  @apply font-normal text-black text-4xl mb-7;
+}
+.right-about-us p {
+  @apply text-[#B2B3B6] text-base mb-8;
+}
+.right-about-us button {
+  @apply mx-auto !text-center;
+}
+.doctors {
+  @apply flex flex-col items-center mt-4 mb-9;
+}
+.doctors h2 {
+  @apply first:text-4xl first:my-10 mt-4 -mb-1 text-xl;
+}
+.doctor-cards {
+  @apply flex justify-evenly items-start;
+}
+.dctr-card {
+  @apply flex flex-col justify-center w-[30%] items-center text-center border rounded-lg cursor-pointer;
+}
+.dctr-card img {
+  @apply w-full;
+}
+.dctr-card h3 {
+  @apply text-xs text-[#2D4072] mb-3;
+}
+.dctr-card p {
+  @apply text-sm text-[#B2B3B6];
+}
+.dctr-card .socialMedia {
+  @apply w-1/2 flex justify-around items-center text-[#2D4072] my-4;
 }
 
 @tailwind utilities;
