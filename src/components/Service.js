@@ -1,8 +1,5 @@
 import React from 'react';
-import { AiOutlineReconciliation } from 'react-icons/ai';
-import { AiOutlineMedicineBox } from 'react-icons/ai';
 import { AiFillPhone } from 'react-icons/ai';
-import { GiDoctorFace } from 'react-icons/gi';
 
 const Service = ({ service }) => {
   let srvc1 = require('../assets/img/srvc1.png');
