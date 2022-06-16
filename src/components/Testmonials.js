@@ -6,14 +6,14 @@ const Testmonials = () => {
       <h4>testimonials</h4>
       <h1>Trust our patients </h1>
       <Carousel className='custom-slider'>
-        <img
+        {/* <img
           src='https://media.geeksforgeeks.org/wp-content/uploads/20210425122739/2.png'
           height='150'
         />
         <img
           src='https://media.geeksforgeeks.org/wp-content/uploads/20210425122716/1.png'
           height='150'
-        />
+        /> */}
       </Carousel>
       {/* <Carousel>
         <img src={require('../assets/img/carousel.png')} height='150' alt='' />
