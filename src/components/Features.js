@@ -1,14 +1,13 @@
 import React from 'react';
-
+const features = [
+  'Pediatry',
+  'Dentistry',
+  'Injection',
+  'Cardiology',
+  'Blood transfusion',
+  'X-Ray',
+];
 const Features = () => {
-  const features = [
-    'Pediatry',
-    'Dentistry',
-    'Injection',
-    'Cardiology',
-    'Blood transfusion',
-    'X-Ray',
-  ];
   return (
     <div className='features'>
       <div className='left-feature'>

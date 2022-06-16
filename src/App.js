@@ -6,6 +6,9 @@ import Services from './components/Services';
 import AboutUs from './components/AboutUs';
 import Doctors from './components/Doctors';
 import Features from './components/Features';
+import Testmonials from './components/Testmonials';
+import Emergency from './components/Emergency';
+import Footer from './components/Footer';
 function App() {
   return (
     <div className='App'>
@@ -15,6 +18,9 @@ function App() {
       <AboutUs />
       <Doctors />
       <Features />
+      {/* <Testmonials /> */}
+      <Emergency />
+      <Footer />
     </div>
   );
 }

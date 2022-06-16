@@ -1,11 +1,11 @@
 import React from 'react';
 import Service from './Service';
+const services = ['Online appointment', 'Emergency Case', 'Our Doctors'];
 const Services = () => {
-  const services = ['Online appointment', 'Emergency Case', 'Our Doctors'];
   return (
-    <div className='service-cards' key={Math.floor(Math.random() * 1000)}>
+    <div className='service-cards'>
       {services.map((service) => (
-        <Service service={service} />
+        <Service key={Math.floor(Math.random() * 1000)} service={service} />
       ))}
     </div>
   );

@@ -131,4 +131,42 @@
 .right-feature .ft {
   @apply w-1/4 flex flex-col items-center mx-2 mb-8;
 }
+.Emergency {
+  @apply flex justify-between relative bg-[#EEF7FB] my-4;
+}
+.Emergency .right-about-us {
+  @apply flex flex-col items-start bg-transparent py-4 ml-24 w-3/5;
+}
+.Emergency .right-about-us h2,
+.Emergency .right-about-us div,
+.Emergency .right-about-us p {
+  @apply bg-transparent;
+}
+.Emergency .right-about-us h2 {
+  @apply text-3xl font-semibold leading-10;
+}
+.Emergency .right-about-us p {
+  @apply w-2/3;
+}
+.Emergency .right-about-us div {
+  @apply text-3xl mb-4;
+}
+.Emergency .right-about-us .btn {
+  @apply ml-0;
+}
+.footer {
+  @apply w-full flex justify-between items-start mt-8 mb-20;
+}
+.right-footer {
+  @apply flex justify-around items-start w-2/3;
+}
+.right-footer .socialMedia {
+  @apply flex justify-between w-12 items-center h-6;
+}
+.right-footer .socialMedia svg {
+  @apply text-[#2D4072];
+}
+.left-footer {
+  @apply flex flex-col gap-2 mr-6;
+}
 @tailwind utilities;

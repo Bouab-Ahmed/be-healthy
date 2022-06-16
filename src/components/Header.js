@@ -1,7 +1,7 @@
 import React from 'react';
 
+let header = require('../assets/img/header.png');
 const Header = () => {
-  let header = require('../assets/img/header.png');
   return (
     <div className='header'>
       <div className='right-header'>

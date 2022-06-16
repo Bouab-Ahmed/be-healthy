@@ -2,28 +2,24 @@ import React from 'react';
 import { FaFacebookF } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
+const doctors = [
+  {
+    docName: 'Jennifer Lee',
+    docProf: 'Pediatry Doctor',
+    desc: 'Lorem Ipsum is simply dummy text of the printing',
+  },
+  {
+    docName: 'Sara wright',
+    docProf: 'Denstist',
+    desc: 'Lorem Ipsum is simply dummy text of the printing',
+  },
+  {
+    docName: 'massoud reducer',
+    docProf: 'surgeon',
+    desc: 'Lorem Ipsum is simply dummy text of the printing',
+  },
+];
 const Doctors = () => {
-  // let doc1 = require('../assets/img/doc1.png');
-  // let doc2 = require('../assets/img/doc2.png');
-  // let doc3 = require('../assets/img/doc3.png');
-  const doctors = [
-    {
-      docName: 'Jennifer Lee',
-      docProf: 'Pediatry Doctor',
-      desc: 'Lorem Ipsum is simply dummy text of the printing',
-    },
-    {
-      docName: 'Sara wright',
-      docProf: 'Denstist',
-      desc: 'Lorem Ipsum is simply dummy text of the printing',
-    },
-    {
-      docName: 'massoud reducer',
-      docProf: 'surgeon',
-      desc: 'Lorem Ipsum is simply dummy text of the printing',
-    },
-  ];
-  console.log(doctors);
   return (
     <div className='doctors'>
       <h2>Doctors</h2>
